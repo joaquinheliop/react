@@ -1,0 +1,47 @@
+Crear Aplicacion: 
+"npx create-react-app aplicacion-2"
+
+Cuando recibo un proyecto react viene sin la carpeta node_modules
+es por eso que tengo que usar el comando : 
+"npm i"
+
+Para iniciar la aplicacion:
+"npm run start"
+
+Cuando creo el componenete puedo usar el comando para crear el codigo 
+de inicio de la app:
+"_rafce"
+
+Creo funciones flechas de forma rapida usando:
+"nfn"
+
+**Con las llaves {} puedo meter codigo JS donde quiera
+
+**Los componentes tienen dos elementos principales los PROPS y el ESTADOS
+
+**Cuando le paso el onClick al elemento generalmente ejecuto una funcion
+  deberia crearla y pasarsela par que cuando haga click la ejecute
+
+**Cuando paso un prop siempre abro y cierro corchetes y adentro escribo o un string
+  una variable una lista un objeto lo que yo quiera
+
+**Los props son de solo lectura NO se pueden modificar
+
+**Con los hooks puedo cambiar contenido que se renderiaza de un componente
+
+**Cuando tengo un objeto o array y le quiero agregar informacion sin elimanar la que ya tiene uso ...
+puedo agregar una nueva propiedad o modificar una ya lista
+var frutas = {
+    fruta1: 'manzana',
+    fruta2: 'pera'
+}
+
+console.log({ ...frutas, fruta2: 'kiwi', fruta3: 'banana' })
+
+**Cuando el nombre de una propiedad de un objeto tiene caracteres especiales tengo que encerrarla en corchetes
+[e.target.name] : 'texto'  o  [e.target.name] : e.target.value
+
+
+
+
+
