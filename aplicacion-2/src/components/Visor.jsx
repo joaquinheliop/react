@@ -17,9 +17,13 @@ const Visor = (props) => {
                         <div className="row">
 
                             <div className="col bg-primary mb-2" style={style} >
+                                <h2>
+                                    {props.operacion}
+                                </h2>
                                 <h1>
                                     {props.dato}
                                 </h1>
+
                             </div>
                         </div>
                     </div>

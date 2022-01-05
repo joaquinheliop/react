@@ -8,6 +8,11 @@ es por eso que tengo que usar el comando :
 Para iniciar la aplicacion:
 "npm run start"
 
+para despegar la app uso:
+"npm run build"
+
+**la puedo desplegar en netlify gratis par armar portfolio
+
 Cuando creo el componenete puedo usar el comando para crear el codigo 
 de inicio de la app:
 "_rafce"
@@ -40,6 +45,14 @@ console.log({ ...frutas, fruta2: 'kiwi', fruta3: 'banana' })
 
 **Cuando el nombre de una propiedad de un objeto tiene caracteres especiales tengo que encerrarla en corchetes
 [e.target.name] : 'texto'  o  [e.target.name] : e.target.value
+
+**cuando paso un prop puede hacer un destructure en el parametro de la funcion usando {} de esta manera no tengo que 
+usar props.agregarTarea todo el tiempo
+ const Formulario = ({agregarTarea}) => {}
+
+
+ 
+
 
 
 
