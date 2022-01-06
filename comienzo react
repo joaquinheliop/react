@@ -51,6 +51,9 @@ usar props.agregarTarea todo el tiempo
  const Formulario = ({agregarTarea}) => {}
 
 
+ **los useEffect() puedo usar todos los que quiera y conviene usarlos por separado en vez de pasarle muchos parametros a uno
+
+
  
 
 
