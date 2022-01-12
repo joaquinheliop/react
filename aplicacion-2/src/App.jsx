@@ -1,5 +1,6 @@
 import { Fragment } from "react"
 import Campos from "./components/Campos"
+import MyComponent from "./components/Figma"
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
         <Fragment>
             <div className="container">
                 <Campos />
+                <MyComponent />
             </div>
         </Fragment>
     )

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import Loading from "./Loading";
-import Paginacion from "./Paginacion";
-import Personaje from "./Personaje";
-import PersonajeGrande from "./PersonajeGrande";
+import Loading from "../Loading";
+import Paginacion from "../ApiRick/Paginacion";
+import Personaje from "../ApiRick/Personaje";
+import PersonajeGrande from "../ApiRick/PersonajeGrande";
 
 const Grilla = ({ busqueda }) => {
 
@@ -18,11 +18,13 @@ const Grilla = ({ busqueda }) => {
     const [paginacion, setPaginacion] = useState(1)
 
     const numPaginas = () => {
-        if ((personajes.length / 6 - Math.round(personajes.length / 6)) < 0.5) {
+        if ((personajes.length / 6 - Math.round(personajes.length / 6)) <= 0.5) {
 
             return Math.round(personajes.length / 6) + 1
+
+        } else {
+            return Math.round(personajes.length / 6)
         }
-        return Math.round(personajes.length / 6)
     }
 
 
@@ -102,7 +104,7 @@ const Grilla = ({ busqueda }) => {
     return (
         <>
             <div className="row">
-                <Paginacion numPersonajes={personajes} numPagina={numPagina} pagAnterior={pagAnterior} pagSiguiente={pagSiguiente} />
+                <Paginacion numPersonajes={personajes} numPagina={numPagina} numPaginas={numPaginas} pagAnterior={pagAnterior} pagSiguiente={pagSiguiente} />
             </div>
             <div className="row justify-content-center mb-4">
                 Pagina {paginacion} de {numPaginas()}
