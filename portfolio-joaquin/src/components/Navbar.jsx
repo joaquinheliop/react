@@ -1,36 +1,28 @@
-import { useContext } from "react"
-import { Link, NavLink } from "react-router-dom"
-import { UserContext } from "../context/UserProvider"
+import styled from "styled-components";
 
+const Navbar = styled.div`
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    grid-area: header;
+    background-color: white;
+    height: 4.375rem;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+`
 
-const Navbar = () => {
-
-    const { user } = useContext(UserContext)
-
+const NavBar = () => {
     return (
+        <Navbar>
+            <h4 className="pe-1 mb-0">Navbar | </h4>
+            <h5 className="ps-1 mb-0">Joaquin</h5>
+        </Navbar>
 
-        <nav className="navbar sticky-top navbar-dark bg-dark justify-content-center">
-            <ul className="nav ">
-                <li className="nav-item">
-                    <NavLink to="/" className="btn btn-outline-primary mx-4">Inicio</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/apirick" className="btn btn-outline-primary mx-4">App Rick & Morty</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/todoapp" className="btn btn-outline-primary mx-4">App ToDo</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/blog" className="btn btn-outline-primary mx-4">Blog</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/contacto" className="btn btn-outline-primary mx-4">Contacto</NavLink>
-                </li>
-            </ul>
-            <Link to='/'> {user ? 'Conectado' : 'Desconectado'}</Link>
-        </nav >
+    );
+};
 
-    )
-}
-
-export default Navbar
+export default NavBar;

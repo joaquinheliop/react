@@ -43,7 +43,7 @@ const TodoList = () => {
 
     return (
         <>
-            <div className="card text-center p-4 mb-3 mt-5">
+            <div className="card text-center p-4 mb-3">
                 <h1>App ToDo</h1>
             </div>
             <div className="card mb-3 px-3 pb-3">

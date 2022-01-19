@@ -29,7 +29,7 @@ const Blog = () => {
 
     return (
         <div>
-            <div className="card text-center p-4 mb-3 mt-5">
+            <div className="card text-center p-4 mb-3 ">
                 <h1>Blog</h1>
             </div>
 
@@ -61,7 +61,7 @@ const Blog = () => {
                             .map((item) => {
                                 const { userId, id, title } = item
                                 return (
-                                    <Link key={id} to={`/blog/${id}`}>
+                                    <Link key={id} to={`/2/${id}`}>
                                         <h3 >{id} - {title}</h3>
                                     </Link>
                                 )

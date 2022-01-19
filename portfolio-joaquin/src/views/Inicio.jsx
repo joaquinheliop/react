@@ -6,7 +6,6 @@ const Inicio = () => {
 
     const { user, iniciarSesion, cerrarSesion } = useContext(UserContext)
 
-
     return (
         <div>
             <h1>Inicio</h1>

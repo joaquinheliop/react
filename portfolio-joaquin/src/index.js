@@ -23,11 +23,11 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Inicio />} />
-          <Route path='apirick' element={<ApiRick />} />
-          <Route path='todoapp' element={<TodoApp />} />
-          <Route path='contacto' element={<Contacto />} />
-          <Route path='blog' element={<Blog />} />
-          <Route path='blog/:id' element={<Post />} />{/*meto en la ruta una variable por ejemplo :id*/}
+          <Route path='0' element={<ApiRick />} />
+          <Route path='1' element={<TodoApp />} />
+          <Route path='2' element={<Blog />} />
+          <Route path='3' element={<Contacto />} />
+          <Route path='2/:id' element={<Post />} />{/*meto en la ruta una variable por ejemplo :id*/}
 
           <Route path='protegida' element={
             <VerificarUsuario>

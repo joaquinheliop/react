@@ -7,7 +7,7 @@ const App = () => {
     const [busqueda, setBusqueda] = useState('')
 
     return (
-        <div className="container mt-5">
+        <div className="container ">
             <div className="clearfix"> </div>
             <div className="card text-center p-4 mb-3">
                 <h1>Api Rick and Morty</h1>

@@ -21,7 +21,7 @@ const Post = () => {
     return (
         <div>
             <div className="d-flex flex-row-reverse mt-4 mb-2">
-                <Link to="/blog" type="button" className="btn btn-outline-primary">  <h3>&larr; </h3> </Link>
+                <Link to="/2" type="button" className="btn btn-outline-primary">  <h3>&larr; </h3> </Link>
             </div>
             <h1>{data.userId} - {data.title}</h1>
             <p>{data.body}</p>
