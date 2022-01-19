@@ -54,6 +54,7 @@ usar props.agregarTarea todo el tiempo
  **los useEffect() puedo usar todos los que quiera y conviene usarlos por separado en vez de pasarle muchos parametros a uno
 
 
+**cuando quiero ejecutar una funcion en onClick= {() => funcion()} si la funcion no recibe parametro puedo evitarme la funcion de flecha onClick= {funcion}
  
 
 
