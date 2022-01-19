@@ -11,7 +11,7 @@ const Post = () => {
     const { data, error, loading } = useFetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
 
     if (loading) {
-        return <Loading />
+        return (<div className="d-flex w-100 mt-4 aling-items-center justify-content-center"><Loading /> </div>)
     }
 
     if (error !== '') {
@@ -19,7 +19,7 @@ const Post = () => {
     }
 
     return (
-        <div>
+        <div className="container w-100">
             <div className="d-flex flex-row-reverse mt-4 mb-2">
                 <Link to="/2" type="button" className="btn btn-outline-primary">  <h3>&larr; </h3> </Link>
             </div>

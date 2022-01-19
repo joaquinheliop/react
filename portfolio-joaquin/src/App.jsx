@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Content from './components/Content';
-import NavBar from './components/NavBar';
+import Navbar from './components/Navbar';
 import SideBar from './components/SideBar';
 
 
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <Container>
-      <NavBar />
+      <Navbar />
       <SideBar />
       <Content />
     </Container>

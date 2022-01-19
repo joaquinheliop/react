@@ -7,7 +7,7 @@ const VerificarUsuario = ({ children }) => {
     const { user } = useContext(UserContext)
 
     if (!user) {
-        return <Navigate to='/inicio' /> // empuja al usuarioa a una ruta que yo quiera
+        return <Navigate to='/' /> // empuja al usuarioa a una ruta que yo quiera
     }
 
     return children

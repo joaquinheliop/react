@@ -28,7 +28,7 @@ const Blog = () => {
     }
 
     return (
-        <div>
+        <div className="w-100">
             <div className="card text-center p-4 mb-3 ">
                 <h1>Blog</h1>
             </div>
@@ -44,7 +44,7 @@ const Blog = () => {
             </div>
 
             <div className="card mb-3 px-3 py-3">
-                <div className="card-body">
+                <div className="card-body ">
                     {
                         loading && <Loading />
                     }

@@ -18,7 +18,7 @@ const Inicio = () => {
                             onClick={cerrarSesion}>
                             Cerrar Sesion
                         </button>
-                        <Link to='/protegida' className="btn btn-warning">Ruta protegida</Link>
+                        <Link to='/protegida' className="btn btn-warning">Perfil</Link>
                     </>
 
                 )

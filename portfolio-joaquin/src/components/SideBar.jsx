@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import styled from "styled-components";
 import logo192 from '../assets/img/logo192.png'
+import { UserContext } from "../context/UserProvider";
 import ListItem from "./ListItem";
+import { NavLink } from "react-router-dom";
 
 const colorPrimario = `#0B5ED7`
 
@@ -25,7 +28,19 @@ const Ul = styled.ul`
     text-align: center;
  `
 
+const Navlink = styled(NavLink)`
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+        color: ${colorPrimario} ;
+    }
+`
+
 const SideBar = () => {
+
+
+    const { user } = useContext(UserContext)
 
     const nameListItem = ['Rick and Morty', 'Todo App', 'Blog', 'Contacto']
 
@@ -44,7 +59,10 @@ const SideBar = () => {
             </Ul>
 
             <hr style={{ height: '1px', backgroundColor: 'white' }} />
-            <h6 className="text-center">Joaquin Helio Perez</h6>
+            <Navlink to={`/`}>
+                <h6 className="text-center">{user ? 'Joaquin Helio Perez' : 'Desconectado'}</h6>
+            </Navlink>
+
         </Aside >
     )
 
